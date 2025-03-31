@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soybean Leaf Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="{{ url_for('static', filename='nec.jpg') }}" alt="NEC College Logo">
+        <ul>
+            <li><a href="#home" onclick="displayHomeContent()">Home</a></li>
+            <li><a href="#about-project" onclick="displayAboutProjectContent()">About Project</a></li>
+            <li><a href="#predictions" onclick="displayPredictionsContent()">Predictions</a></li>
+        
+            <li><a href="#model-evaluation" onclick="displayEvaluationContent()">Model Evaluation Metrics</a></li>
+            <li><a href="#project-flowchart" onclick="displayFlowchartContent()">Project Flowchart</a></li>
+        </ul>
+        </ul>
+    </nav>
+
+    <div id="content">
+        <h1>Deep Learning Solutions for Soybean Leaf Infestation : A VGG19 Approach</h1>
+        <h2>Team Members:  
+            Triveni Dasari, 
+            Supriya Borugadda, 
+            BhagyaLakshmi Polimera
+        </h2>
+    
+        <!-- Images placed horizontally using flexbox -->
+        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <div style="text-align: center;">
+                <img src="/static/caterpillar (4).jpg" alt="Image 1" style="max-width: 50%; height: auto;">
+                <p>Caterpillar Infestation</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="/static/diabroticaspeciosa (10).jpg" alt="Image 2" style="max-width: 50%; height: auto;">
+                <p>Diabrotica Speciosa</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="/static/healthy (4).jpg" alt="Image 3" style="max-width: 50%; height: auto;">
+                <p>Healthy Soybean Leaf</p>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
